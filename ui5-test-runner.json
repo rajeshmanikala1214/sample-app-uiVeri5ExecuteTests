@@ -1,0 +1,21 @@
+{
+  "url": "http://localhost:8080/test/testsuite.qunit.html",
+  "start": "start",
+  "startTimeout": 30000,
+  "ci": true,
+  "reportDir": "reports",
+  "reportGenerator": [
+    "$/report.js",
+    "./ci/sonar-generic-execution.js"
+  ],
+  "coverage": true,
+  "coverageReportDir": "reports/coverage",
+  "coverageReporters": [
+    "lcov",
+    "cobertura"
+  ],
+  "coverageCheckBranches": 100,
+  "coverageCheckFunctions": 100,
+  "coverageCheckLines": 100,
+  "coverageCheckStatements": 100
+}
