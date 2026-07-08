@@ -1,0 +1,29 @@
+/* ======================================== */
+/* CSS for control sap.ui.commons/Splitter  */
+/* Horizon High Contrast White theme        */
+/* ======================================== */
+
+.sapUiVerticalSplitterBar {
+	background-image: url('img/splitter/splitter_vert_grip.png');
+	background-color: var(--sapContent_ForegroundBorderColor);
+	font-size: @sapUiDesktopFontSize;
+}
+
+.sapUiHorizontalSplitterBar {
+	background-image: url('img/splitter/splitter_horiz_grip.png');
+	background-color: var(--sapContent_ForegroundBorderColor);
+	font-size: @sapUiDesktopFontSize;
+}
+
+.sapUiVerticalSplitterBar:hover {
+	background-color: lighten(@sapUiContentForegroundBorderColor, 20);
+}
+
+.sapUiHorizontalSplitterBar:hover {
+	background-color: lighten(@sapUiContentForegroundBorderColor, 20);
+}
+
+.sapUiHorizontalSplitterBar:focus,
+.sapUiVerticalSplitterBar:focus {
+	outline: var(--sapContent_FocusColor) solid 3px;
+}

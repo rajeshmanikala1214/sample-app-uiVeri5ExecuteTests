@@ -1,0 +1,36 @@
+/* ========================================== */
+/* CSS for control sap.ui.commons/MenuButton  */
+/* Evening Horizon theme                      */
+/* ========================================== */
+
+.sapUiMenuButton {
+	font-family: var(--sapFontFamily);
+	font-size: @sapUiDesktopFontSize;
+	position: relative;
+}
+
+.sapUiMenuButton.sapUiBtnS {
+	padding-right: 15px;
+}
+
+.sapUiMenuButtonIco {
+	margin-left: 6px;
+	bottom: 4px;
+	right: 3px;
+	position: absolute;
+	background-image: url('img/menubutton/Menu_Regular.png');
+}
+
+.sapUiBtnDsbl.sapUiMenuButton > .sapUiMenuButtonIco {
+	background-image: url('img/menubutton/Menu_Disabled.png');
+}
+
+.sapUiBtnLite > .sapUiMenuButtonIco {
+	right: 4px;
+}
+
+.sapUiBtnS.sapUiBtnAccept > .sapUiMenuButtonIco,
+.sapUiBtnS.sapUiBtnReject > .sapUiMenuButtonIco,
+.sapUiBtnS.sapUiBtnEmph > .sapUiMenuButtonIco {
+	background-image: url('img/menubutton/Menu_Hover.png');
+}

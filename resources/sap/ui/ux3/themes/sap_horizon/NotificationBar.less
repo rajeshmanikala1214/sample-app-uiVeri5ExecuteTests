@@ -1,0 +1,50 @@
+/* =========================================== */
+/* CSS for control sap.ui.ux3/NotificationBar  */
+/* Morning Horizon theme                       */
+/* =========================================== */
+
+.sapUiNotificationBar {
+	font-family: var(--sapFontFamily);
+	font-size: @sapUiDesktopFontSize;
+	border-radius: 0;
+	border-top: 1px solid @sapUiNotificationBarBorder;
+}
+
+.sapUiNotifierCallout {
+	font-family: var(--sapFontFamily);
+	font-size: @sapUiDesktopFontSize;
+	padding: 0 4px;
+	border-radius: 2px;
+}
+
+.sapUiNotifierTitle {
+	font-family: var(--sapFontFamily);
+	font-size: @sapUiDesktopFontSize;
+	padding-left: 4px;
+}
+
+.sapUiBarToggle {
+	border-top: 1px solid @sapUiNotificationBarBorder;
+	border-left: 1px solid @sapUiNotificationBarBorder;
+	border-right: 1px solid @sapUiNotificationBarBorder;
+}
+
+.sapUiNotifierMessageCount.sapUiMessage.sapUiMessageSuccess {
+	background-color: var(--sapPositiveElementColor);
+}
+
+/* Workaround: border of callout should be "border: 1px solid @sapUiNotificationBarBorder;" but arrow positioning wrong */
+.sapUiNotifierCallout {
+	padding: 0;
+}
+
+.sapUiNotifierCallout > .sapUiCltBaseCont.sapUiCltCont {
+	min-height: 30px;
+	border: 1px solid @sapUiNotificationBarBorder;
+	border-radius: 2px;
+}
+
+.sapUiNotifier .sapUiIcon {
+	color: darken(@sapUiContentContrastIconColor, 5);
+}
+/* Workaround end */

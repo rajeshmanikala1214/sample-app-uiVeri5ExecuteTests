@@ -1,0 +1,74 @@
+/* ======================================= */
+/* CSS for control sap.ui.commons/MenuBar  */
+/* Evening Horizon theme                   */
+/* ======================================= */
+
+.sapUiMnuBar {
+	font-family: var(--sapFontFamily);
+	font-size: @sapUiDesktopFontSize;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.sapUiMnuBarDsbl {
+	border-color: transparent;
+}
+
+.sapUiMnuBarArea {
+	height: 24px;
+}
+
+.sapUiMnuBarItm {
+	border: 1px solid transparent;
+	outline: medium none;
+	padding: 2px 5px 2px 5px;
+	margin-top: 1px;
+	margin-bottom: 4px;
+	color: var(--sapContent_ForegroundTextColor);
+}
+
+.sapUiMnuBarItmDsbl {
+	color: var(--sapContent_DisabledTextColor);
+}
+
+.sapUiMnuBarHeader > .sapUiMnuBarArea > .sapUiMnuBarItm {
+	color: var(--sapContent_ForegroundTextColor);
+}
+
+.sapUiMnuBarHeader > .sapUiMnuBarArea > .sapUiMnuBarItmDsbl {
+	color: var(--sapContent_DisabledTextColor);
+}
+
+.sapUiMnuBarItm:focus {
+	background-color: var(--sapHighlightColor);
+	border: 1px solid var(--sapHighlightColor);
+	color: var(--sapContent_ContrastTextColor);
+}
+
+.sapUiMnuBarItm.sapUiMnuBarItmDsbl:hover {
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: var(--sapContent_DisabledTextColor);
+}
+
+.sapUiMnuBarItm.sapUiMnuBarItmDsbl:focus {
+	background-color: transparent;
+	border: 1px dotted var(--sapContent_DisabledTextColor);
+	color: var(--sapContent_DisabledTextColor);
+}
+
+.sapUiMnuBarOvrFlw::after {
+	content: '';
+}
+
+.sapUiMnuBarOvrFlw > span {
+	background-image: url('img/menu/bar-overflow.png');
+	background-position: right top;
+	padding-left: 9px;
+}
+
+.sapUiMnuBarItm.sapUiMnuBarOvrFlw {
+	padding: 0 0 4px 0;
+	top: 1px;
+	margin-right: 3px;
+}

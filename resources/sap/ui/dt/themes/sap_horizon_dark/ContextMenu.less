@@ -1,0 +1,22 @@
+/* ====================================== */
+/* CSS for control sap.ui.dt/ContextMenu  */
+/* Evening Horizon theme                  */
+/* ====================================== */
+
+@_sap_ui_dt_ContextMenu_BorderRadius: var(--sapField_BorderCornerRadius); /* 0.25rem */
+
+.sapUiDtContextMenu.sapMMenu {
+
+	.sapMMenuList {
+
+		.sapMMenuItem {
+			border-radius: @_sap_ui_dt_ContextMenu_BorderRadius;
+
+			&:focus {
+				&.sapMMenuItemDisabled {
+					outline: none;
+				}
+			}
+		}
+	}
+}
