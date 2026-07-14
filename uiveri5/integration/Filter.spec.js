@@ -9,7 +9,7 @@ describe("Filter", function () {
     beforeEach(function () {
     browser.get("index.html");
     });
-    
+
 	function todoItems() {
 		return element.all(by.control({
 			controlType: "sap.m.CustomListItem",
@@ -26,11 +26,6 @@ describe("Filter", function () {
 			properties: { key: sKey }
 		})).click();
 	}
-
-	beforeEach(function () {
-		browser.executeScript("window.localStorage && window.localStorage.clear();");
-		browser.get("index.html");
-	});
 
 	it("should show 1 item when filtering for 'Active'", function () {
 		filterFor("active");

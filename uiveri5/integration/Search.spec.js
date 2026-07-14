@@ -29,12 +29,6 @@ describe("Search", function () {
 		oSearch.clear();
 		return oSearch.sendKeys(sQuery + protractor.Key.ENTER);
 	}
-
-	beforeEach(function () {
-		browser.executeScript("window.localStorage && window.localStorage.clear();");
-		browser.get("index.html");
-	});
-
 	it("should find one item matching 'earn'", function () {
 		searchFor("earn"); // matches "Learn OpenUI5"
 		expect(todoItems().count()).toBe(1);

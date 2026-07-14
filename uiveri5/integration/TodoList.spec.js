@@ -11,7 +11,7 @@ describe("Todo List", function () {
     beforeEach(function () {
     browser.get("index.html");
     });
-    
+
 	// All todo rows, scoped to the "todoList" control.
 	function todoItems() {
 		return element.all(by.control({
@@ -20,13 +20,6 @@ describe("Todo List", function () {
 			ancestor: { id: "todoList", viewName: sViewName }
 		}));
 	}
-
-	beforeEach(function () {
-		// The app has no persistence, so a reload gives each spec a clean state
-		// (2 seed items: "Start this app" completed, "Learn OpenUI5" active).
-		browser.executeScript("window.localStorage && window.localStorage.clear();");
-		browser.get("index.html");
-	});
 
 	it("should start with the two initial items", function () {
 		expect(todoItems().count()).toBe(2);
