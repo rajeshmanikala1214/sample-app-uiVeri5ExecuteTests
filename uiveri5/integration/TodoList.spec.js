@@ -8,6 +8,10 @@ describe("Todo List", function () {
 
 	const sViewName = "sap.ui.demo.todo.view.App";
 
+    beforeEach(function () {
+    browser.get("index.html");
+    });
+    
 	// All todo rows, scoped to the "todoList" control.
 	function todoItems() {
 		return element.all(by.control({

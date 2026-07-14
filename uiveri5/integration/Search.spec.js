@@ -8,6 +8,10 @@ describe("Search", function () {
 
 	const sViewName = "sap.ui.demo.todo.view.App";
 
+    beforeEach(function () {
+    browser.get("index.html");
+    });
+
 	function todoItems() {
 		return element.all(by.control({
 			controlType: "sap.m.CustomListItem",
