@@ -12,7 +12,7 @@ exports.config = {
 	// In the native Jenkins docker network the node container (where the app is
 	// served) is reachable from the Selenium sidecar via the alias "uiVeri5".
 	// For a real deployment, set TARGET_SERVER_URL instead of serving locally.
-	baseUrl: process.env.TARGET_SERVER_URL || "http://uiVeri5:8080/",
+	baseUrl: process.env.TARGET_SERVER_URL || "http://appundertest:8080/",
 
 	// uiVeri5 spec files (native uiVeri5 tests, not OPA5).
 	specs: path.join(__dirname, "integration", "*.spec.js"),
